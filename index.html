@@ -129,7 +129,7 @@
 
   <div class="btn-container">
     <div class="menu-btn">
-      <img class="btn-pic" src="images/01-youtube.jpg" alt="youtube">
+      <a href="https://chrisratsabout.github.io/youtube"><img class="btn-pic" src="images/01-youtube.jpg" alt="youtube"></a>
       <p>Youtube</p>
     </div>
   </div>
@@ -150,37 +150,44 @@
       {
         id: 1,
         image: "images/01-youtube.jpg",
-        alt: "Youtube"
+        alt: "Youtube",
+        link: "https://chrisratsabout.github.io/youtube"
       },
 
       {
         id: 2,
         image: "images/02-podcast.jpg",
-        alt: "Podcast"
+        alt: "Podcast",
+        link: "https://chrisratsabout.github.io/podcast"
+        
       },
 
       {
         id: 3,
         image: "images/03-twitch.jpg",
-        alt: "Twitch"
+        alt: "Twitch",
+        link: "https://chrisratsabout.github.io/twitch"
       },
 
       {
         id: 4,
         image: "images/04-personalmusic.jpg",
-        alt: "Personal Music"
+        alt: "Personal Music",
+        link: "https://chrisratsabout.github.io/personalmusic"
       },
 
       {
         id: 5,
         image: "images/05-about.jpg",
-        alt: "About"
+        alt: "About",
+        link: "https://chrisratsabout.github.io/about"
       },
 
       {
         id: 6,
         image: "images/06-contact.jpg",
-        alt: "Contact"
+        alt: "Contact",
+        link: "https://chrisratsabout.github.io/contact"
       }
 
     ]
@@ -194,7 +201,7 @@
     function loadBtns(arr) {
       let buttonMap = arr.map(function (item) {
         return `<div class="menu-btn">
-            <img class="btn-pic" src="${item.image}" alt="${item.alt}">
+          <a href="${item.link}"><img class="btn-pic" src="${item.image}" alt="${item.alt}"></a>
             <p class="btn-text">${item.alt}</p>
         </div>`
       })
