@@ -26,12 +26,12 @@
     }
 
     body {
-     background-image: url("background.jpg");
-     background-position: center center;
-			background-repeat:  no-repeat;
-			background-attachment: fixed;
-			background-size:  cover;
-			background-color: #999;
+      background-image: url("background.jpg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      background-color: #999;
       color: #fff;
     }
 
@@ -75,6 +75,23 @@
     .btn-pic:hover {
       opacity: .5;
       transition: linear, .3s;
+      box-shadow:
+        inset 0 0 50px #fff,
+        /* inner white */
+        inset 20px 0 60px rgb(251, 255, 0),
+        /* inner left magenta short */
+        inset -20px 0 60px #0ff,
+        /* inner right cyan short */
+        inset 20px 0 200px rgb(217, 255, 0),
+        /* inner left magenta broad */
+        inset -20px 0 200px #0ff,
+        /* inner right cyan broad */
+        0 0 30px #fff,
+        /* outer white */
+        -10px 0 60px rgb(255, 238, 0),
+        /* outer left magenta */
+        10px 0 60px #0ff;
+      /* outer right cyan */
     }
 
     .btn-text {
@@ -134,7 +151,8 @@
 
   <div class="btn-container">
     <div class="menu-btn">
-      <a href="https://chrisratsabout.github.io/youtube"><img class="btn-pic" src="images/01-youtube.jpg" alt="youtube"></a>
+      <a href="https://chrisratsabout.github.io/youtube"><img class="btn-pic" src="images/01-youtube.jpg"
+          alt="youtube"></a>
       <p>YouTube</p>
     </div>
   </div>
@@ -164,7 +182,7 @@
         image: "images/02-podcast.jpg",
         alt: "Podcast",
         link: "https://chrisratsabout.github.io/podcast"
-        
+
       },
 
       {
